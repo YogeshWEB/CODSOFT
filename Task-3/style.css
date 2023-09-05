@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 1000px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+.pill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* padding-top: 25px; */
+}
+
+.pill a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+.pill:hover{
+    background-color: rgba(101, 104, 101, 0.271);
+    
+}
+
+.mypic{
+    display: flex;
+    width: 400px;
+    height: 700px;
+    float: right;
+    padding: 40px;
+    border-radius:50px;
+}
+.text-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+.Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.icon-class{
+    padding: 50px;
+}
+
+.Skills-heading{
+    text-align: center;
+}
+.About{
+    display: flex;
+    justify-content:center;
+    padding: 50px;
+    background-color: wheat;
+    width: 1000px;
+    margin: auto;
+    border-radius: 30px;
+}
+.about-heading{
+    text-align: center;
+}
+.about-container{
+    display: flex;
+    width: 1000px;
+    max-width: 1000px;
+}
+.about-text{
+    padding: 20px;
+}
+.image{
+    padding: 20px;
+}
+.aboutpic{
+    border-radius: 30px 0;
+}
+
+.project-heading{
+    text-align: center;
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: rgba(101, 104, 101, 0.271);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+.p-img{
+    display: flex;
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+}
+.project-title{
+    text-align: center;
+}
+.card:hover{
+    .p-img{
+     width: 350px;
+    height: 250px;
+    }
+}
+.resume{
+    text-align: center;
+}
+.resume button h1 a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(101, 104, 101, 0.271);
+    margin: 20px;
+    padding: 20px;
+}
+.resume button{
+    border: none;
+    background: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact i{
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(101, 104, 101, 0.271);
+}
