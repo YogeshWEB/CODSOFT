@@ -1,159 +1,101 @@
-body{
+* {
     margin: 0;
-    padding: 0;
-}
-
-.header{
-    height: 1000px;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.logo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-.pill{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    /* padding-top: 25px; */
-}
-
-.pill a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    font-size: 20px;
-}
-.pill:hover{
-    background-color: rgba(101, 104, 101, 0.271);
-    
-}
-
-.mypic{
-    display: flex;
-    width: 400px;
-    height: 700px;
-    float: right;
-    padding: 40px;
-    border-radius:50px;
-}
-.text-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 650px;
-}
-.Skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-.icon-class{
-    padding: 50px;
-}
-
-.Skills-heading{
-    text-align: center;
-}
-.About{
-    display: flex;
-    justify-content:center;
-    padding: 50px;
-    background-color: wheat;
-    width: 1000px;
-    margin: auto;
-    border-radius: 30px;
-}
-.about-heading{
-    text-align: center;
-}
-.about-container{
-    display: flex;
-    width: 1000px;
-    max-width: 1000px;
-}
-.about-text{
-    padding: 20px;
-}
-.image{
-    padding: 20px;
-}
-.aboutpic{
-    border-radius: 30px 0;
-}
-
-.project-heading{
-    text-align: center;
-}
-.project-container{
-    display: flex;
-    justify-content: center;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 250px;
-    background-color: rgba(101, 104, 101, 0.271);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-}
-.p-img{
-    display: flex;
-    width: 280px;
-    height: 180px;
-    border-radius: 10px;
-}
-.project-title{
-    text-align: center;
-}
-.card:hover{
-    .p-img{
-     width: 350px;
-    height: 250px;
-    }
-}
-.resume{
-    text-align: center;
-}
-.resume button h1 a{
-    text-decoration: none;
-    color: black;
-    background-color: rgba(101, 104, 101, 0.271);
-    margin: 20px;
-    padding: 20px;
-}
-.resume button{
+  }
+  body {
+    font-family: monospace;
+    color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .calculator {
+    width: 20rem;
+    height: 22rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgb(73, 70, 70);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .calculator--main {
+    width: 20rem;
+    height: 22rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgb(73, 70, 70);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .display-cont {
+    padding: 12px;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+  }
+  .display {
+    font-family: monospace;
+    color: #fff;
+    font-size: 1.5rem;
     border: none;
-    background: none;
-}
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.contact i{
-    padding: 20px;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(101, 104, 101, 0.271);
-}
+    height: 3rem;
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: clip;
+    direction: rtl;
+    background-color: transparent;
+  }
+  .operations {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  button {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid #888;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: monospace;
+    color: #fff;
+  }
+  button:hover {
+    opacity: 0.6;
+  }
+  button:hover--main {
+    opacity: 0.6;
+  }
+  button.equal {
+    grid-column: 2 / span 2;
+  }
+  .clear-btn {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #888;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #5d5e62;
+  }
+  .numbers {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .operators {
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .operators > button {
+    background-color: #f49e3f;
+  }
+  .numbers > button {
+    background-color: #7a7a7d;
+  }
